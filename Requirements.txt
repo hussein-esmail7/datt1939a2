@@ -1,0 +1,5 @@
+Assignment Requirements
+
+- JS-based: 11 HTML pages + index.html + statement.html
+- At least 10 pages must use JS
+- Must fulfill at least 4 JS categories: http://www.yorku.ca/nmw/datt1939f21/assignment2.html#lojsc

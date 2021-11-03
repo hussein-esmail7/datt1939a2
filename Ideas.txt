@@ -5,3 +5,4 @@ Ideas/Brainstorm
 - Hard mode: Dark map and the character has a flashlight as he walks around
 - Give the player an option to use the keyboard to move around and do things
 - 
+testing

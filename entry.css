@@ -1,0 +1,21 @@
+body, html{
+    height: 100%;
+}
+
+.bg{
+    position: relative;
+    background-image: url(src/entry);
+    z-index: 0;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-door{
+    position: absolute;
+    z-index: 1;
+    top: 146px;
+    left: 158px;
+    cursor: pointer;
+}

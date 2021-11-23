@@ -19,3 +19,11 @@ body, html{
     left: 158px;
     cursor: pointer;
 }
+
+.right-door{
+    position: absolute;
+    z-index: 1;
+    top: 156px;
+    right: 230px;
+    cursor: pointer;
+}

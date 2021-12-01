@@ -26,18 +26,19 @@
      <div class="bg">
     </div>
 	
-    	<div>
-		<a href="entry.html">Back to Entry</a>
-	</div>
-	
 	 <audio id="mansurprised" src="src/mansurprised.mp3">
         
     <script type="text/javascript">
         
-    setTimeout(function(){
+     setTimeout(function(){
   document.getElementById('mansurprised').play();
          console.log('Audio is starting'); //delete this line when submitting
-}, 2000)
+}, 2000);
+        
+    setTimeout(function(){
+ 	alert("The owner of the house has seen you and alerted the police! Try again!"); 
+    location.href = 'entry.html';
+}, 4000);
         
     </script>
         </audio>

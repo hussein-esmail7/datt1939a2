@@ -2,25 +2,27 @@
 <html lang="en">
 
 <head>
-    <title></title> <!-- TODO: Title -->
+    <title>Kid's Room</title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen"/>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="js/every.js"></script>
 </head>
 <body>
-	
-    
-    <audio id="girlscream" src="src/girlscream.mp3">
-        
+	<div>
+		<a href="hallway.html">Back to Hallway</a>
+	</div>
+    <div>
+		<a href="#" onclick="getClueCount()">Get Clue Count</a>
+	</div>
+    <audio id="girlscream" src="src/girlscream.mp3">  
     <script type="text/javascript">
-        
-    setTimeout(function(){
-  document.getElementById('girlscream').play();
-         console.log('Audio is starting');
-}, 3000)
-        
+        setTimeout(function() {
+            document.getElementById('girlscream').play();
+            console.log('Audio is starting');
+        }, 3000)
     </script>
-        </audio>
+    </audio>
 </body>
 </html>

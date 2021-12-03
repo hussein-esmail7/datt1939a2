@@ -8,29 +8,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
 	<script type="text/javascript" src="js/every.js"></script>
-    <style>
-        body {
-            background-image: url(src/Hallway.png);
-        }
-    </style>
 </head>
 <body>
     
-    <div>
-		<a href="entry.html">Back to Entry</a>
-	</div>
-    <div>
-		<a href="masterbedroom.html">Master Bedroom</a>
-	</div>
-    <div>
-		<a href="guestbedroom.html">Guest Bedroom</a>
-	</div>
-    <div>
-		<a href="kidsroom.html">Kid's Bedroom</a>
-	</div>
-    <div>
-		<a href="bathroom.html">Bathroom</a>
-	</div>
+   <style>
+body, html{
+    height: 100%;
+    
+}
+
+.bg{
+    position: relative;
+    background-image: url(src/hallway.png);
+    z-index: 0;
+    height: 768px;
+    width: 1024px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .door1{
+    position: absolute;
+    z-index: 1;
+    bottom: 15%;
+    left: 3.6%;
+    cursor: pointer;
+    }
+    
+    .door2{
+    position: absolute;
+    z-index: 1;
+    top: 13%;
+    left: 28%;
+    cursor: pointer;
+    }
+    
+    .door3{
+    position: absolute;
+    z-index: 1;
+    top: 12%;
+    right: 18%;
+    cursor: pointer;
+    }
+    
+    .door4{
+    position: absolute;
+    z-index: 1;
+    top:17%;
+    right: 2.9%;
+    cursor: pointer; 
+    }
+    
+    .stairs{
+    position: absolute;
+    z-index: 1;
+    bottom: -1%;
+    right: 2.9%;
+    }
+    
+</style>
+
+	 <div class="bg">
+    </div>
+       
+    <div class="door1">
+            <img src="src/door1.png" onclick="location.href='kidsroom.html';">
+       </div>
+       
+        <div class="door2">
+            <img src="src/door2.png" onclick="location.href='guestbedroom.html';">
+       </div>
+       
+        <div class="door3">
+            <img src="src/door3.png" onclick="location.href='masterbedroom.html';">
+       </div>
+       
+        <div class="door4">
+            <img src="src/door4.png" onclick="location.href='bathroom.html';">
+       </div>
+       
+       <div class="stairs">
+            <img src="src/stairsupper.png">
+       </div>
 	<div>
 		<a href="#" onclick="getClueCount()">Get Clue Count</a>
 	</div>

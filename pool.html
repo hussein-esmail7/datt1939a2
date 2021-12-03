@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-//THIS PAGE IS FINISHED, DELETE THIS COMMENT WHEN SUBMITTING
+<!-- THIS PAGE IS FINISHED, DELETE THIS COMMENT WHEN SUBMITTING -->
 <head>
     <title>Pool</title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen"/>
@@ -8,40 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <script type="text/javascript" src="js/every.js"></script>
+    <style>
+        body {
+            background-image: url(src/Pool.png);
+        }
+    </style>
 </head>
 <body>
-    <style>
-    .bg{
-    position: relative;
-    background-image: url(src/pool.png);
-    z-index: 0;
-    height: 768px;
-    width: 1024px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-    </style>
-    
-     <div class="bg">
-    </div>
-	
-	 <audio id="mansurprised" src="src/mansurprised.mp3">
+	<audio id="mansurprised" src="src/mansurprised.mp3">
+    <script type="text/javascript">    
+        setTimeout(function() {
+            document.getElementById('mansurprised').play();
+            console.log('Audio is starting'); //delete this line when submitting
+        }, 2000);
         
-    <script type="text/javascript">
-        
-     setTimeout(function(){
-  document.getElementById('mansurprised').play();
-         console.log('Audio is starting'); //delete this line when submitting
-}, 2000);
-        
-    setTimeout(function(){
- 	alert("The owner of the house has seen you and alerted the police! Try again!"); 
-    location.href = 'entry.html';
-}, 4000);
-        
+        setTimeout(function(){
+ 	        alert("The owner of the house has seen you and alerted the police! Try again!"); 
+            location.href = 'entry.html';
+        }, 4000);
     </script>
-        </audio>
+    </audio>
 	
    	<div>
 		<a href="#" onclick="getClueCount()">Get Clue Count</a>

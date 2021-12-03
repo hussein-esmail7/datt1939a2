@@ -32,10 +32,10 @@ function clue1found() {
 				// Should never reach this case
 				break;
 		}
-		alert(document.cookie);
+		// alert(document.cookie);
 	} else {
 		alert("You already found that clue!");
-		alert(document.cookie);
+		// alert(document.cookie);
 	}
 }
 
@@ -59,10 +59,10 @@ function clue2found() {
 				// Should never reach this case
 				break;
 		}
-		alert(document.cookie);
+		// alert(document.cookie);
 	} else {
 		alert("You already found that clue!");
-		alert(document.cookie);
+		// alert(document.cookie);
 	}
 }
 
@@ -86,9 +86,9 @@ function clue3found() {
 				// Should never reach this case
 				break;
 		}
-		alert(document.cookie);
+		// alert(document.cookie);
 	} else {
 		alert("You already found that clue!");
-		alert(document.cookie);
+		// alert(document.cookie);
 	}
 }

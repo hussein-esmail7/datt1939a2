@@ -8,31 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <script type="text/javascript" src="js/every.js"></script>
+    <script type="text/javascript" src="js/points.js"></script>
     <style>
         body {
-            background-image: url(src/MasterBedroom_unrendered.png);
-        }
-
-        .shelf {
-            position: absolute;
-            z-index: 1;
-            top: 60px;
-            right: -150px;
-            height: 400px;
-            cursor: pointer;
+            background-image: url(src/MasterBedroomShelfPage.png);
         }
     </style>
 </head>
 <body>
 	<div>
-		<a href="hallway.html">Back to Hallway</a>
+		<a href="masterbedroom.html">Back to Master Bedroom</a>
 	</div>
     <div>
-        <a class="shelf glowhover" href="masterbedroomshelf.html">
-            <img src="src/MasterBedroomShelf.png">
-        </a>
-        
-    </div>
+		<a href="#" onclick="clue3found()">Clue 3 item</a>
+	</div>
     <div>
 		<a href="#" onclick="getClueCount()">Get Clue Count</a>
 	</div>

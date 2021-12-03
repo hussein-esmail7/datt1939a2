@@ -9,16 +9,101 @@
     <meta name="format-detection" content="telephone=no">
 	<script type="text/javascript" src="js/every.js"></script>
 	<script type="text/javascript" src="js/points.js"></script>
-    <style>
-        body {
-            background-image: url(src/LivingRoom.png);
-        }
-    </style>
+
 </head>
 <body>
-    <div>
-		<a href="entry.html">Back to Entry</a>
-	</div>
+<style>
+body, html{
+    height: 100%;
+    
+}
+
+.bg{
+    position: relative;
+    background-image: url(src/livingroom1.png);
+    z-index: 0;
+    height: 768px;
+    width: 1024px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    .paintings{
+    position: absolute;
+    z-index: 1;
+    top: 8%;
+    right: 8%;
+    cursor: pointer;
+        
+}
+    .popup{
+        display: none;
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+    }
+    
+    .popup-content{
+        float: left;
+        padding: 30px;
+        width: 50%;
+        box-shadow: 0 5px 8px 0 black;
+    }
+    
+    #closeBtn{
+        color: black;
+        float: right;
+        font-size: 40px;
+    }
+    
+    #closeBtn:hover, #closeBtn:focus{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+</style>
+
+	<div class="bg">
+    	</div>
+       
+       <div class="paintings">
+       <img id="largePaintings" src="src/paintings.png" width="500px" height="300px">
+       </div>
+       
+       <div id ="imgpopup" class="popup">
+       <div class="popup-content">
+           <span id="closeBtn">&times;</span>
+           <img src="src/bookfake.png" width="580px" height="580px">
+           </div>
+       </div>
+       
+       <script>
+      	var modal = document.getElementById('imgpopup');
+           
+        var modalBtn = document.getElementById('largePaintings');
+           
+        var closeBtn = document.getElementById('closeBtn');
+           
+        modalBtn.addEventListener('click', openPainting);
+        
+        closeBtn.addEventListener('click', closePainting);
+           
+        function openPainting(){
+            modal.style.display = 'block';
+        }
+           
+        function closePainting(){
+            modal.style.display = 'none';
+        }
+       </script>
+    
+</body>
+</html>
 	<div>
 		<a href="#" onclick="clue1found()">Clue 1 item</a>
 	</div>

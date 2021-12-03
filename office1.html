@@ -3,7 +3,7 @@
 
 <head>
     <title>Office</title>
-    <link rel="stylesheet" type="text/css" href="/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/every.css" media="screen"/>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -11,7 +11,15 @@
     <script type="text/javascript" src="js/points.js"></script>
     <style>
         body {
-            background-image: url(src/OfficeDesk_unrendered.png);
+            background-image: url(src/OfficeDesk.png);
+        }
+
+        .sticky {
+            position: absolute;
+            z-index: 1;
+            top: 300px;
+            left: 700px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -20,7 +28,9 @@
 		<a href="office.html">Back to Office</a>
 	</div>
     <div>
-		<a href="#" onclick="clue2found()">Clue 2 item</a>
+		<a href="#" onclick="clue2found()">
+            <img class="glowhover sticky" width=100px height=100px src="src/OfficeDeskSticky.png">
+        </a>
 	</div>
     <div>
 		<a href="#" onclick="getClueCount()">Get Clue Count</a>

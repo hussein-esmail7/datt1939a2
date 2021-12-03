@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Index</title>
+</head>
+
+<body>
+<style>
+body {
+  background-color:#0a0923;
+  padding: 5px 25px;
+  margin: 0;
+}
+
+
+#robber {
+    position: absolute;
+  top: 20%;
+    z-index: 0;
+}
+    
+    #monalisa{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        z-index: 1;
+    }
+
+
+    </style>
+
+    <div id="robber">
+        <img src="src/robber.png" height="550px" width="500px">
+    </div>
+    
+    <div id="monalisa">
+        <img src="src/monalisa.png" height="550px" width="500px">
+    </div>
+    
+    <script>
+     setTimeout(function(){
+ 	alert("You have found the mysterious painting! But... it's an unfinished and bald version of the Mona Lisa? You went through all this trouble for this? Maybe you should not have tried to steal something that wasn't yours. You have decided to put the painting back and give your life of crime! The end!"); 
+    location.href = 'index.html';
+}, 6000)
+    </script>
+    
+   
+    </body>
+</html>

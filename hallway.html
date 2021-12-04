@@ -66,6 +66,14 @@ body, html{
     bottom: -1%;
     right: 2.9%;
     }
+	   
+	.arrow{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 500px;
+    cursor: pointer;
+}
     
 </style>
 
@@ -91,6 +99,10 @@ body, html{
        <div class="stairs">
             <img src="src/stairsupper.png">
        </div>
+	
+	 <div class="arrow" onclick="location.href='livingroom.html';">
+        <img src="src/arrowdown.png" width="50px" height="50px">
+    </div>
 	<div>
 		<a href="#" onclick="getClueCount()">Get Clue Count</a>
 	</div>

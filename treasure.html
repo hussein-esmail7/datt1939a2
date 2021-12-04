@@ -3,74 +3,63 @@
 
 <head>
     <title>Treasure Room</title>
+    <link rel="stylesheet" type="text/css" href="/every.css" media="screen"/>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <script type="text/javascript" src="js/every.js"></script>
     <style>
-       body, html{
-    height: 100%;
-    
-}
+        body {
+            background-image: url(src/Vault.png);
+        }
+        
+        .keypad {
+            position: absolute;
+            z-index: 1;
+            top: 100px;
+            left: 700px;
+            cursor: pointer;
+        }
 
-.bg{
-    position: relative;
-    background-image: url(src/vault.png);
-    z-index: 0;
-    height: 768px;
-    width: 1024px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-        
-    .keypad{
-    position: absolute;
-    z-index: 1;
-    top: 18%;
-    right: 30%;
-    cursor: pointer;
-        
-}
-    .popup{
-        display: none;
-        position: fixed;
-        z-index: 2;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        overflow: auto;
-    }
-    
-    .popup-content{
-        background-color: #141d32;
-        border: 2px solid black;
-        float: left;
-        padding: 30px;
-        width: 50%;
-        box-shadow: 0 5px 8px 0 black;
-    }
-    
-    #closeBtn{
-        color: black;
-        float: right;
-        font-size: 40px;
-    }
-    
-    #closeBtn:hover, #closeBtn:focus{
-        text-decoration: none;
-        cursor: pointer;
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
         }
     
-        #code{
+        .popup-content {
+            background-color: #141d32;
+            border: 2px solid black;
+            float: left;
+            padding: 30px;
+            width: 50%;
+            box-shadow: 0 5px 8px 0 black;
+        }
+        
+        #closeBtn {
+            color: black;
+            float: right;
+            font-size: 40px;
+        }
+        
+        #closeBtn:hover, #closeBtn:focus {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    
+        #code {
             height: 30px;
             font-size: 14pt;
             border-radius: 20px;
             cursor: text
         }
         
-        #openVault{
+        #openVault {
             margin-left: 50px;
             height: 45px;
             font-size: 14pt;
@@ -81,65 +70,49 @@
             cursor: pointer;
         }
         
-        #openVault:hover{
+        #openVault:hover {
             background-color: #092974;
         }
     </style>
 </head>
 <body>
-   <div class="bg">
-    </div>
-    
     <div class="keypad">
-       <img id="keypad" src="src/keypad.png" width="180px" height="180px">
-       </div>
-       
-       <div id ="imgpopup" class="popup">
-       <div class="popup-content">
-           <span id="closeBtn">&times;</span>
-           <input type="text" id="code" placeholder="Enter code...">
-           <button id="openVault">Open Vault</button>
-           </div>
-       </div>
-    
-    <div>
-		<a href="#" onclick="getClueCount()">Get Clue Count</a>
-	</div>
-    
-      <script>
-       var modal = document.getElementById('imgpopup');
-           
+        <img id="keypad" src="src/Keypad.png">
+    </div>
+    <div id ="imgpopup" class="popup">
+    <div class="popup-content">
+        <span id="closeBtn">&times;</span>
+        <input type="text" id="code" placeholder="Enter code...">
+        <button id="openVault">Open Vault</button>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById('imgpopup');
         var modalBtn = document.getElementById('keypad');
-           
         var closeBtn = document.getElementById('closeBtn');
-           
+        var code = document.getElementById('code');
         modalBtn.addEventListener('click', openKeypad);
-        
         closeBtn.addEventListener('click', closeKeypad);
            
-        function openKeypad(){
+        function openKeypad() {
             modal.style.display = 'block';
         }
            
-        function closeKeypad(){
+        function closeKeypad() {
             modal.style.display = 'none';
         }
-          
-        var code = document.getElementById('code');
         
         document.getElementById('openVault').addEventListener('click', validateCode);
           
-        function validateCode(){
+        function validateCode() {
             if (code.value == 'Bald Mona Lisa') {
                 alert('Opening vault now...');
                 location.href = 'end.html';
                 return true;
-            } else (code.value !== 'Bald Mona Lisa') 
+            } else { 
                 alert('You have entered the wrong code!');
             }
-    
-          
- </script>
-    
+        }
+    </script>
 </body>
 </html>

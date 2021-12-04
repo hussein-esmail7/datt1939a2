@@ -8,91 +8,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
 	<script type="text/javascript" src="js/every.js"></script>
+    <style>
+        body {
+            background-image: url(src/Hallway.jpg);
+        }
+
+        .door {
+            position: absolute;
+            z-index: 1;
+            cursor: pointer;
+        }
+        .door1 {
+            
+            bottom: 15%;
+            left: 3.6%;
+            
+        }
+            
+        .door2 {
+            top: 13%;
+            left: 28%;
+        }
+            
+        .door3 {
+            top: 12%;
+            right: 18%;
+        }
+            
+        .door4 {
+            top:17%;
+            right: 2.9%;
+        }
+            
+        .stairs {
+            position: absolute;
+            z-index: 1;
+            bottom: -1%;
+            right: 2.9%;
+        }
+            
+        .arrow {
+            position: absolute;
+            z-index: 1;
+            bottom: 10px;
+            left: 500px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
-   <style>
-body, html{
-    height: 100%;
-    
-}
-
-.bg{
-    position: relative;
-    background-image: url(src/hallway.png);
-    z-index: 0;
-    height: 768px;
-    width: 1024px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-    .door1{
-    position: absolute;
-    z-index: 1;
-    bottom: 15%;
-    left: 3.6%;
-    cursor: pointer;
-    }
-    
-    .door2{
-    position: absolute;
-    z-index: 1;
-    top: 13%;
-    left: 28%;
-    cursor: pointer;
-    }
-    
-    .door3{
-    position: absolute;
-    z-index: 1;
-    top: 12%;
-    right: 18%;
-    cursor: pointer;
-    }
-    
-    .door4{
-    position: absolute;
-    z-index: 1;
-    top:17%;
-    right: 2.9%;
-    cursor: pointer; 
-    }
-    
-    .stairs{
-    position: absolute;
-    z-index: 1;
-    bottom: -1%;
-    right: 2.9%;
-    }
-	   
-.arrow{
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    left: 500px;
-    cursor: pointer;
-}
-    
-</style>
-
-	 <div class="bg">
-    </div>
        
-    <div class="door1">
+    <div class="door door1">
             <img src="src/door1.png" onclick="location.href='kidsroom.html';">
        </div>
        
-        <div class="door2">
+        <div class="door door2">
             <img src="src/door2.png" onclick="location.href='guestbedroom.html';">
        </div>
        
-        <div class="door3">
+        <div class="door door3">
             <img src="src/door3.png" onclick="location.href='masterbedroom.html';">
        </div>
        
-        <div class="door4">
+        <div class="door door4">
             <img src="src/door4.png" onclick="location.href='bathroom.html';">
        </div>
        

@@ -1,164 +1,169 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Index</title>
+    <title>Index</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background: #0a0923;
+            overflow: hidden;
+            }
+
+        .btn-group {
+            float: left;
+        }
+    
+        #statementbtn {
+            position: fixed;
+            box-sizing: border-box;
+            z-index: 1;
+            display: inline-block;
+            background-color: #85C7F2;
+            border: 2px solid black;
+            height: 30px;
+            right: 200px;
+            width: 110px;
+            bottom: 20px;
+            color: black;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    
+        #statementbtn:hover {
+            background-color: #56cdcf;
+            cursor: pointer;
+        }
+    
+        #startbtn {
+            position: fixed;
+            box-sizing: border-box;
+            z-index: 1;
+            display: inline-block;
+            background-color: #85C7F2;
+            border: 2px solid black;
+            height: 30px;
+            width: 110px;
+            bottom: 20px;
+            left: 200px;
+            color: black;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    
+        #startbtn:hover{
+            background-color: #56cdcf;
+            cursor: pointer;
+        }
+
+        .fading {
+            position: relative;
+            width: 100%;
+            min-height: 60vh;
+            top: -25px;
+            background-image: linear-gradient(0deg, transparent, black 75%);
+            z-index: 1;
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            height: 800px;
+            color: #ffffff;
+            font-family: 'Pathway Gothic One', sans-serif;
+            font-size: 500%;
+            font-weight: 600;
+            letter-spacing: 6px;
+            line-height: 150%;
+            perspective: 400px;
+            text-align: justify;
+        }
+
+        .scroll {
+            position: relative;
+            top: 99999px;
+            transform-origin: 50% 100%;
+            animation: scroll 45s linear;
+        }
+
+        .scroll > .title {
+            font-size: 90%;
+            text-align: center;
+        }
+
+        .scroll > .title h1 {
+            margin: 0 0 100px;
+            text-transform: uppercase;
+        }
+
+        @keyframes scroll {
+            0% {
+                top: -100px;
+                transform: rotateX(20deg)  translateZ(0);
+            }
+            100% { 
+                top: -6000px;
+                transform: rotateX(25deg) translateZ(-2500px);
+            }
+        }
+    </style>
 </head>
 
 <body>
-<style>
-    body {
-  width: 100%;
-  height: 100%;
-  background: #0a0923;
-  overflow: hidden;
-}
-
-.btn-group{
-    float: left;
-    }
-    
-#statementbtn{
-    position: fixed;
-    box-sizing: border-box;
-    z-index: 1;
-    display: inline-block;
-    background-color: #85C7F2;
-    border: 2px solid black;
-    height: 30px;
-    right: 200px;
-    width: 110px;
-    bottom: 20px;
-    color: black;
-    font-size: 18px;
-    cursor: pointer;
-    }
-    
-#statementbtn:hover{
-    background-color: #56cdcf;
-   cursor: pointer;
-    }
-    
-#startbtn{
-    position: fixed;
-    box-sizing: border-box;
-    z-index: 1;
-    display: inline-block;
-    background-color: #85C7F2;
-    border: 2px solid black;
-    height: 30px;
-    width: 110px;
-    bottom: 20px;
-    left: 200px;
-    color: black;
-    font-size: 18px;
-    cursor: pointer;
-    }
-    
-#startbtn:hover{
-    background-color: #56cdcf;
-   cursor: pointer;
-    }
-
-.fading {
-  position: relative;
-  width: 100%;
-  min-height: 60vh;
-  top: -25px;
-  background-image: linear-gradient(0deg, transparent, black 75%);
-  z-index: 1;
-}
-
-.text {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 800px;
-  color: #ffffff;
-  font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 500%;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 150%;
-  perspective: 400px;
-  text-align: justify;
-}
-
-.scroll {
-  position: relative;
-  top: 99999px;
-  transform-origin: 50% 100%;
-  animation: scroll 45s linear;
-}
-
-.scroll > .title {
-  font-size: 90%;
-  text-align: center;
-}
-
-.scroll > .title h1 {
-  margin: 0 0 100px;
-  text-transform: uppercase;
-}
-
-@keyframes scroll {
-  0% {
-    top: -100px;
-    transform: rotateX(20deg)  translateZ(0);
-  }
-  100% { 
-    top: -6000px;
-    transform: rotateX(25deg) translateZ(-2500px);
-  }
-}
-</style>
-<div class="fading"></div>
-
-<section class="text">
-  <div class="scroll">
-    <div class="title">
-      <p>The Mystery Painting</p>
-    </div>
-    
-    <p>Leonardo DaVinci was a brilliant artist who painted the Mona Lisa, however, it is a secret to most that he also painted her twin sister.</p>
-      
-      <p>A very wealthy man was able to obtain this painting and you, as a thief, must find it.</p>
-      <p>You must navigate this very large mansion while avoiding traps so you can find the mystery painting...</p>
-  </div>
-</section>
-    
-   
-    <div class="btn-group">
-        <button id="statementbtn" onclick="location.href='statement.html';"><b>Statement</b></button>
-         <script>
-        document.getElementById("statementbtn").style.display = "none";
-
-        function showBtn() {
-            document.getElementById("statementbtn").style.display = "inline";
-        }
-
-        function myFunction() {
-            window.location = "index.html"
-        }
-
-        setTimeout(showBtn, 25000);
-    </script>
-        
-        <button id="startbtn" onclick="location.href='entry.html';"><b>Start</b></button>
-         <script>
-        document.getElementById("startbtn").style.display = "none";
-
-        function showBtn() {
-            document.getElementById("startbtn").style.display = "inline";
-        }
-
-        function myFunction() {
-            window.location = "index.html"
-        }
-
-        setTimeout(showBtn, 17000);
-    </script>
+    <div class="fading"></div>
+    <section class="text">
+        <div class="scroll">
+            <div class="title">
+                <p>The Mystery Painting</p>
+            </div>
+            <p>Leonardo DaVinci was a brilliant artist who painted the Mona Lisa, however, it is a secret to most that he also painted her twin sister.</p>
+            <p>A very wealthy man was able to obtain this painting and you, as a thief, must find it.</p>
+            <p>You must navigate this very large mansion while avoiding traps so you can find the mystery painting...</p>
         </div>
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+    </section>
+    <div class="btn-group">
+        <button id="statementbtn" onclick="location.href='statement.html';">
+            <b>Statement</b>
+        </button>
+        <script>
+            document.getElementById("statementbtn").style.display = "none";
+            
+            function showBtn() {
+                document.getElementById("statementbtn").style.display = "inline";
+            }
+
+            function myFunction() {
+                window.location = "index.html"
+            }
+
+            setTimeout(showBtn, 25000);
+        </script>
+        
+        <button id="startbtn" onclick="location.href='entry.html';">
+            <b>Start</b>
+        </button>
+        <script>
+            document.getElementById("startbtn").style.display = "none";
+
+            function showBtn() {
+                document.getElementById("startbtn").style.display = "inline";
+            }
+
+            function myFunction() {
+                window.location = "index.html"
+            }
+
+            setTimeout(showBtn, 17000);
+        </script>
+    </div>
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
+    </a>
+    <br>
+    
+    <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+    </p>
     
 
     

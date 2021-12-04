@@ -8,56 +8,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <script type="text/javascript" src="js/every.js"></script>
-    
- <style>
-body, html{
-    height: 100%;
-    
-}
-
-.bg{
-    position: relative;
-    background-image: url(src/diningroom.png);
-    z-index: 0;
-    height: 768px;
-    width: 1024px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    <style>
+        body {
+            background-image: url(src/DiningRoom.jpg);
+        }
 	 
-	 .arrow{
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    left: 50px;
-    cursor: pointer;
-}
+        .arrow {
+            position: absolute;
+            z-index: 1;
+            bottom: 10px;
+            left: 50px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
-	
-     <div class="bg">
-    </div>
-	
 	<div class="arrow" onclick="location.href='entry.html';">
         <img src="src/arrowback.png" width="50px" height="50px">
     </div>
-    
     <audio id="diningmusic" src="src/diningmusic.mp3">
-        
-    <script type="text/javascript">
-        
-    setTimeout(function(){
-  document.getElementById('diningmusic').play();
-}, 2000)
-        
-        
-    </script>
-        </audio>
-	
-    <div>
+        <script type="text/javascript">
+            setTimeout(function() {
+                document.getElementById('diningmusic').play();
+            }, 2000)
+        </script>
+    </audio>
+	<div>
 		<a href="#" onclick="getClueCount()">Get Clue Count</a>
 	</div>
 </body>

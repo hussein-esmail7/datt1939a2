@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title></title> <!-- TODO: Title -->
+    <title>Living Room</title>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -61,6 +61,22 @@ body, html{
         text-decoration: none;
         cursor: pointer;
     }
+	
+	.arrow1{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 50px;
+    cursor: pointer;
+}
+    
+    .arrow2{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 50px;
+    cursor: pointer;
+}
     
 </style>
 
@@ -77,6 +93,14 @@ body, html{
            <img src="src/code1.png" width="580px" height="580px">
            </div>
        </div>
+	   
+	    <div class="arrow1" onclick="location.href='entry.html'">
+        <img src="src/arrowback.png" width="50px" height="50px">
+    </div>
+       
+       <div class="arrow2" onclick="location.href='kitchen.html'">
+        <img src="src/arrowright.png" width="50px" height="50px">
+    </div>
        
        <script>
        var modal = document.getElementById('imgpopup');

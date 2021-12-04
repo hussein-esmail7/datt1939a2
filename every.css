@@ -1,5 +1,8 @@
-body {
-    height: 100%;
+body, html{
+    height: 100%;    
+}
+
+.bg {
     position: relative;
     z-index: 0;
     height: 768px;

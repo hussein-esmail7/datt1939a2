@@ -77,6 +77,13 @@ body, html{
     right: 50px;
     cursor: pointer;
 }
+	.stairs{
+         position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 10px;
+    cursor: pointer;
+    }
     
 </style>
 
@@ -94,13 +101,17 @@ body, html{
            </div>
        </div>
 	   
-	    <div class="arrow1" onclick="location.href='entry.html'">
+	    <div class="arrow1" onclick="location.href='entry.html';">
         <img src="src/arrowback.png" width="50px" height="50px">
     </div>
        
-       <div class="arrow2" onclick="location.href='kitchen.html'">
+       <div class="arrow2" onclick="location.href='kitchen.html';">
         <img src="src/arrowright.png" width="50px" height="50px">
     </div>
+	   
+	  <div class="stairs" onclick="location.href='hallway.html';">
+        <img src="src/livingstairs.png" height="300px" width="280px">
+       </div>
        
        <script>
        var modal = document.getElementById('imgpopup');

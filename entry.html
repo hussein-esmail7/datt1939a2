@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- THIS PAGE IS FINISHED, DELETE THIS COMMENT WHEN SUBMITTING -->
 <head>
     <title>Entry</title>
     <link rel="stylesheet" type="text/css" href="/every.css" media="screen"/>
@@ -35,6 +34,14 @@
     bottom: 50px;
     left: 350px;
 }
+	    
+.arrow{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 500px;
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
@@ -50,6 +57,11 @@
     <div class="staircase glowhover" onclick="location.href='hallway.html';">
         <img src="src/Entry_Stairs.png" width="200px" height="470px">
     </div>
+	
+	<div class="arrow" onclick="location.href='livingroom.html'">
+        <img src="src/arrowforward.png" width="50px" height="50px">
+    </div>
+	
     <div>
 		<a href="hallway.html">To Hallway</a>
 	</div>

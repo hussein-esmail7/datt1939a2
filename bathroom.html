@@ -24,13 +24,21 @@
         .lamp:hover {
             transform: rotate(25deg);
         }
+
+        .arrow1 {
+            position: absolute;
+            z-index: 1;
+            bottom: 10px;
+            left: 50px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div class="bg"></div>
-    <div>
-		<a href="hallway.html">Back to Hallway</a>
-	</div>
+    <div class="arrow1" onclick="location.href='hallway.html';">
+        <img src="src/arrowback.png" width="50px" height="50px">
+    </div>
     <div class="lamp glowhover" onclick="location.href='treasure.html';">
         <img height=100 src="src/BathroomLamp.png">
     </div>

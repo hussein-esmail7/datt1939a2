@@ -1,4 +1,3 @@
-
 function getCookie(cname) { //Generally do not edit this function!
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -11,12 +10,11 @@ function getCookie(cname) { //Generally do not edit this function!
     } // end of loop
     return "";
 }
+
+
 function getClueCount() {
     var clueCount = getCookie("clueCount");
     switch (clueCount) {
-        case "":
-			alert("You haven't found any clues so far...");
-            break;
         case "1":
             alert("You have one clue so far...");
             break;
@@ -27,6 +25,14 @@ function getClueCount() {
 			alert("You have all the clues! Now for the next step.");
 			break;
 		default:
+            alert("You haven't found any clues so far...");
 			break;
 	}
+}
+
+function caughtCookies() {
+    document.cookie = "hasClue1=";
+    document.cookie = "hasClue2=";
+    document.cookie = "hasClue3=";
+    document.cookie = "clueCount=0";
 }

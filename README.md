@@ -7,5 +7,5 @@ Group members:
 - Dave Elevado
 - Marisa Ribeiro
 
-Where is the site? --> In the "a2" folder. All files that are part of the 
+Where is the site? --> In the "a2" folder. All files that are part of the
 *actual* website are here (HTML/CSS/JS files + media)

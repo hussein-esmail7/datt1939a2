@@ -11,7 +11,6 @@ function getCookie(cname) { //Generally do not edit this function!
     return "";
 }
 
-
 function getClueCount() {
     var clueCount = getCookie("clueCount");
     switch (clueCount) {
@@ -28,11 +27,4 @@ function getClueCount() {
             alert("You haven't found any clues so far...");
 			break;
 	}
-}
-
-function caughtCookies() {
-    document.cookie = "hasClue1=";
-    document.cookie = "hasClue2=";
-    document.cookie = "hasClue3=";
-    document.cookie = "clueCount=0";
 }

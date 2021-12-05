@@ -36,51 +36,183 @@
         Robbery
     </p>
 
+    <br>
+
     <p><b>2. A clear list of all the choices you made for Columns 1 - 4, above.</b></p>
 	<p>
 		Please see our submitted report <a href="https://docs.google.com/document/d/1KQ-Ull1vDqeIVDecul5Q5r4slwQJ-MVs0nRILzLU88U/edit?usp=sharing">here on Google Docs</a>.
 	</p>
 
-    <p><b>3. Articulate your concepts and intentions in a brief explanation of, guiding questions for, and/or artist's statement about your completed work.
-        Minimum Articulation word count: 300 words / Suggested Maximum: 700 words</b></p>
+    <br>
+
+	<p><b>
+        3. Articulate your concepts and intentions in a brief explanation of,
+		guiding questions for, and/or artist's statement about your completed
+		work.  Minimum Articulation word count: 300 words / Suggested Maximum:
+		700 words
+	</b></p>
 	<p>
-		<!-- TODO -->
+		In this assignment, our group decided to make a JavaScript-based game where the player would try to steal something. The player does not know what it is they are stealing until they reach the end of the game, except the clues that are left behind in the form of sticky notes. The location they are trying to rob from is the mansion of a rich man (who in the game is currently in his indoor pool in <a href="pool.html">pool.html</a>). The object that is hidden inside the vault is a painting that seems a bit worthless. 
 	</p>
 
-    <p><b>4. List ALL the filenames of web pages that contribute to fulfilling the JavaScript requirements:</b></p>
-    <p><b>&nbsp; 4a. List file names of the pages that add to the total count of pages using JavaScript (of any and all kinds).</b></p>
-	<p>
-		<!-- TODO -->
-	</p>
-
-    <p><b>&nbsp; 4b. Separately, list the file names of page(s) demonstrating the different A2 JavaScript Categories used in your A2. (Yes, that means the names in this list will also be in the previous list, above).</b></p>
     <p>
-		<!-- TODO -->
-	</p>
+        The possible outcomes of this game for the player all end similarly. If the player is caught by one of the characters such as the owner, kid, or dog, they go back to the entryway. If the player collects all three clues and gets to the vault, the player finally sees that the painting is not too interesting, even if it was painted by Leonardo da Vinci. So the player decides to put back the painting and give up their life of crime. 
+    </p>
 
-    <p><b>5. Include a sitemap diagram - showing all the HTML files/windows in your A2 and how they lead to each other. Differentiate between normal links between pages and links controlled by JavaScript (ie. label or colour code the links controlled by JavaScript).</b></p>
+    <p>
+        The reason why we made the game this way is to teach people that even though stealing may be beneficial for the robber, it is not the right thing to do. Originally during the planning process, an idea was tossed around that the player would be discovered as they are exiting the mansion with the painting, meaning that entering the mansion at all would mean an arrest would be made. 
+    </p>
+
+    <p>
+        At the beginning of the planning process of this project, all of the project members knew that we wanted to do some sort of adventure game, since that would give something for the player to work for, thus they might enjoy it more once they see their supposed reward. 
+    </p>
+
+    <p>
+        During the creation of this project, the work was mainly divided into 2 groups; design of the artwork and coding of the HTML pages. I (Hussein) feel that this was good on our part because some of us are better artists than programmers, and others have had previous programming knowledge.
+    </p>
 
     <br>
 
+    <p><b>
+        4. List ALL the filenames of web pages that contribute to fulfilling
+        the JavaScript requirements:
+    </b></p>
+    <p><b>
+        &nbsp; 4a. List file names of the pages that add to the total count
+        of pages using JavaScript (of any and all kinds).
+    </b></p>
+	<ul>
+        <li><a href="js/every.js">js/every.js</a>: Contains functions used by all room pages</li>
+        <li><a href="js/points.js">js/points.js</a>: Contains functions to count how many clues the user got</li>
+        <li><a href="diningroom.html">diningroom.html</a>: Plays audio file</li>
+        <li><a href="end.html">end.html</a>: Alerts user that they won the game</li>
+        <li><a href="guestbedroom.html">guestbedroom.html</a>: Plays audio file</li>
+        <li><a href="index.html">index.html</a>: Shows start button and statement button after text scrolls</li>
+        <li><a href="kidsroom.html">kidsroom.html</a>: Plays audio file and alerts user that they're caught</li>
+        <li><a href="kitchen.html">kitchen.html</a>: Plays audio file and alerts user that they're caught</li>
+        <li><a href="livingroom.html">livingroom.html</a>: Popup image on click and close button for it, and calls clue functions</li>
+        <li><a href="masterbedroomshelf.html">masterbedroomshelf.html</a>: Calls clue functions</li>
+        <li><a href="office1.html">office1.html</a>: Calls clue functions</li>
+        <li><a href="pool.html">pool.html</a>: Plays audio file and alerts user that they're caught</li>
+    </ul>
+
+    <p><b>
+        &nbsp; 4b. Separately, list the file names of page(s) demonstrating
+        the different A2 JavaScript Categories used in your A2. (Yes, that
+        means the names in this list will also be in the previous list, above).
+    </b></p>
+
+    <p>By JS category</p>
+    <ul>
+        <li>Calling function from <a href="js/every.js">js/every.js</a>
+            <ul>
+                <li><a href="bathroom.html">bathroom.html</a></li>
+                <li><a href="diningroom.html">diningroom.html</a></li>
+                <li><a href="entry.html">entry.html</a></li>
+                <li><a href="guestbedroom.html">guestbedroom.html</a></li>
+                <li><a href="hallway.html">hallway.html</a></li>
+                <li><a href="livingroom.html">livingroom.html</a></li>
+                <li><a href="masterbedroom.html">masterbedroom.html</a></li>
+                <li><a href="masterbedroomshelf.html">masterbedroomshelf.html</a></li>
+                <li><a href="office.html">office.html</a></li>
+                <li><a href="office1.html">office1.html</a></li>
+            </ul>
+        </li>
+        <li>Play audio via function in file (with timeout)
+            <ul>
+                <li><a href="diningroom.html">diningroom.html</a></li>
+                <li><a href="guestbedroom.html">guestbedroom.html</a></li>
+                <li><a href="kidsroom.html">kidsroom.html</a></li>
+                <li><a href="kitchen.html">kitchen.html</a></li>
+                <li><a href="pool.html">pool.html</a></li>
+            </ul>
+        </li>
+        <li>Time delays (and then something happens, not counting audio file timeouts)
+            <ul>
+                <li><a href="index.html">index.html</a></li>
+            </ul>
+        </li>
+        <li>Popup panel on button click + close button (Event Listeners)
+            <ul>
+                <li><a href="livingroom.html">livingroom.html</a></li>
+            </ul>
+        </li>
+        <li>Note: There may be more categories but I may not remember them at this point...</li>
+    </ul>
+
+    <br>
+
+    <p><b>
+        5. Include a sitemap diagram - showing all the HTML files/windows in
+        your A2 and how they lead to each other. Differentiate between normal
+        links between pages and links controlled by JavaScript (ie. label or colour code the links controlled by JavaScript).
+    </b></p>
+
     <p><b>(A sitemap is an image similar in some ways to the diagrams towards the bottom of the Structure in an <a href="http://www.yorku.ca/nmw/datt1939f21/week05/interactivestructures.html">Interactive Space: Screen to Screen / Document to Document</a> page, except the sitemap should label each page with its filename, and use different-coloured arrows to show normal links versus JS links.)</b></p>
-    <p>
-		<!-- TODO -->
-	</p>
+    
+    <div>
+        <img src="src/Sitemap.png">
+    </div>
+
+    <br>
 
     <p><b>6. Give credit for any outside sources you used (if any) to learn JavaScript, or for outside JS examples that you adapted -whether from books, websites (link to specific pages/examples), etc.</b></p>
+    <p>
+		Previous knowledge, otherwise none used.
+	</p>
+
+    <br>
 
     <p><b>7. Give credit/list sources for any Creative Commons Licensed media you use on or in creating the A2 (if you use any).</b></p>
 
-    <br>
-
     <p><b>Bibliographic-level citations are not required, but you must give appropriate credit for any and all non-original text, images, sound, or JavaScript (except for examples from the DATT 1939 Resource page) used in the A2.</b></p>
 
-    <br>
-
     <p><b>Include notable pieces of information, for example, for media found on the web include the URL, name of the site it was found on, creator if known, and any other important information. Use your judgement, and give credit where it is due.</b></p>
-    <p>
-		<!-- TODO -->
-	</p>
+    
+    <table>
+        <tr>
+            <th>Media Type</th>
+            <th>Media</th>
+            <th>Site Name + URL</th>
+            <th>Creator</th>
+            <th>Location Used</th>
+        </tr>
+        <tr>
+            <td>Audio</td>
+            <td>Dog Barking</td>
+            <td><a href="https://freesound.org/people/Juan_Merie_Venter/sounds/327666/">freesound.org</a></td>
+            <td>Juan_Merie_Venter</td>
+            <td><a href="kitchen.html">kitchen.html</a></td>
+        </tr>
+        <tr>
+            <td>Audio</td>
+            <td>Kid Girl Screaming</td>
+            <td><a href="https://freesound.org/people/222laurio/sounds/466063/">freesound.org</a></td>
+            <td>222laurio</td>
+            <td><a href="kidsroom.html">kidsroom.html</a></td>
+        </tr>
+        <tr>
+            <td>Audio</td>
+            <td>Man Gasp</td>
+            <td><a href="https://freesound.org/people/a13389/sounds/528782/">freesound.org</a></td>
+            <td>a13389</td>
+            <td><a href="pool.html">pool.html</a></td>
+        </tr>
+        <tr>
+            <td>Audio</td>
+            <td>Dining Room Music</td>
+            <td><a href="https://freesound.org/people/Migfus20/sounds/559836/">freesound.org</a></td>
+            <td>Migfus20</td>
+            <td><a href="diningroom.html">diningroom.html</a></td>
+        </tr>
+        <tr>
+            <td>Audio</td>
+            <td>Guest Bedroom Music</td>
+            <td><a href="https://freesound.org/people/ShortRecord/sounds/535934/">freesound.org</a></td>
+            <td>ShortRecord</td>
+            <td><a href="guestbedroom.html">guestbedroom.html</a></td>
+        </tr>
+    </table>
 
 </body>
 </html>

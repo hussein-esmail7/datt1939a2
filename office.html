@@ -13,6 +13,16 @@
         .bg {
             background-image: url(src/Office.png);
         }
+
+        .toDesk {
+            position: absolute;
+            z-index: 1;
+            top: 300px;
+            left: 200px;
+            height: 250px;
+            width: 650px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -21,10 +31,10 @@
 		<a href="entry.html">Back to Entry</a>
 	</div>
     <div>
-		<a href="office1.html">To Desk</a>
+		<a href="office1.html" class="toDesk glowhover"></a>
 	</div>
     <div>
-		<a href="#" onclick="getClueCount()">Get Clue Count</a>
+		<a class="cluecountbtn" href="#" onclick="getClueCount()">Get Clue Count</a>
 	</div>
 </body>
 </html>

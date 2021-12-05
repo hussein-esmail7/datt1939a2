@@ -11,7 +11,62 @@
     <script type="text/javascript" src="js/points.js"></script>
     <style>
         .bg {
-            background-image: url(src/MasterBedroomShelfPage.png);
+            background-image: url(src/MasterBedroomShelf.jpg);
+        }
+
+        .shelf {
+            position: absolute;
+            z-index: 1;
+            top: 40px;
+            left: 510px;
+            height: 650px;
+            width: 340px;
+            cursor: pointer;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+        }
+        
+        .popup-content{
+            float: left;
+            padding: 30px;
+            width: 50%;
+            box-shadow: 0 5px 8px 0 black;
+        }
+        
+        #closeBtn {
+            color: red;
+            background-color: black;
+            padding: 10px;
+            float: right;
+            font-size: 40px;
+        }
+        
+        #closeBtn:hover, #closeBtn:focus{
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .sticky {
+            position: absolute;
+            z-index: 2;
+            top: 140px;
+            left: 130px;
+            cursor: pointer;
+            height: 600px;
+            width: 700px;
+        }
+
+        .sticky:hover {
+            border: 2px red solid;
         }
     </style>
 </head>
@@ -21,11 +76,34 @@
 		<a href="masterbedroom.html">Back to Master Bedroom</a>
 	</div>
     <div>
-		<a href="#" onclick="clue3found()">Clue 3 item</a>
-	</div>
+        <a class="shelf glowhover" id="shelf" href="#">
+        </a>
+    </div>
+    <div id="imgpopup" class="popup">
+        <div class="popup-content">
+            <span id="closeBtn">&times;</span>
+            <a href="#" onclick="clue3found()"><img src="src/MasterBedroomSticky.png" class="sticky"></a>
+        </div>
+    </div>
     <div>
-		<a href="#" onclick="getClueCount()">Get Clue Count</a>
+		<a class="cluecountbtn" href="#" onclick="getClueCount()">Get Clue Count</a>
 	</div>
+
+    <script>
+        var modal = document.getElementById('imgpopup');
+        var modalBtn = document.getElementById('shelf');
+        var closeBtn = document.getElementById('closeBtn');
+        modalBtn.addEventListener('click', openPainting);
+        closeBtn.addEventListener('click', closePainting);
+            
+        function openPainting() {
+            modal.style.display = 'block';
+        }
+        
+        function closePainting() {
+            modal.style.display = 'none';
+        }
+        </script>
 
 </body>
 </html>

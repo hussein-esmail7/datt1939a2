@@ -78,6 +78,8 @@
             z-index: 1;
             top: 50px;
             left: 10px;
+            height: 300px;
+            width: 100px;
             cursor: pointer;
         }
 
@@ -97,42 +99,37 @@
     <div class="paintings">
         <img id="largePaintings" src="src/paintings.png" width="500px" height="300px">
     </div>
-    <div id ="imgpopup" class="popup">
+    <div id="imgpopup" class="popup">
         <div class="popup-content">
             <span id="closeBtn">&times;</span>
             <img src="src/LivingRoomLargePainting.png" width="580px" height="580px">
             <a href="#" onclick="clue2found()"><img src="src/LivingRoomSticky.png" class="sticky"></a>
             <a >
-                <img class="glowhover sticky" width=100px height=100px src="src/OfficeDeskSticky.png">
+                <img class="glowhover sticky" width=100px height=100px src="src/LivingRoomSticky.png">
             </a>
         </div>
     </div>
-    
+    <div>
+		<a class="cluecountbtn" href="#" onclick="getClueCount()">Get Clue Count</a>
+	</div>
     <div class="arrow1" onclick="location.href='entry.html';">
-    <img src="src/arrowback.png" width="50px" height="50px">
+        <img src="src/arrowback.png" width="50px" height="50px">
     </div>
-       
-       <div class="arrow2" onclick="location.href='kitchen.html';">
+    <div class="arrow2" onclick="location.href='kitchen.html';">
         <img src="src/arrowright.png" width="50px" height="50px">
     </div>
-	    
-       <div class="arrow3" onclick="location.href='diningroom.html';">
+    <div class="arrow3" onclick="location.href='diningroom.html';">
         <img src="src/arrowdown.png" width="50px" height="50px">
     </div>
-	   
-	  <div class="stairs" onclick="location.href='hallway.html';">
-        <img src="src/livingstairs.png" height="300px" width="280px">
-       </div>
+	<div class="stairs" onclick="location.href='hallway.html';">
+        <img class="stairs" src="src/livingstairs.png">
+    </div>
        
-       <script>
-       var modal = document.getElementById('imgpopup');
-           
+    <script>
+        var modal = document.getElementById('imgpopup');
         var modalBtn = document.getElementById('largePaintings');
-           
         var closeBtn = document.getElementById('closeBtn');
-           
         modalBtn.addEventListener('click', openPainting);
-        
         closeBtn.addEventListener('click', closePainting);
            
         function openPainting() {
@@ -142,7 +139,7 @@
         function closePainting() {
             modal.style.display = 'none';
         }
-       </script>
+    </script>
     
 </body>
 </html>
